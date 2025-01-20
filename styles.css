@@ -294,26 +294,36 @@ footer {
         left: -100%;
         width: 100%;
         height: calc(100vh - 70px);
-        background: var(--nav-bg);
+        background: #000000;  /* Pure black background */
         flex-direction: column;
         align-items: center;
         padding: 2rem 0;
         transition: var(--transition);
         z-index: 1000;
+        border-top: 1px solid var(--border-color);
     }
 
     .nav-links.active {
         left: 0;
+        background: #000000;  /* Ensuring background is black when menu is active */
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
     }
 
     .nav-links a {
         color: var(--text-color);
         font-size: 1.1rem;
         padding: 1rem 0;
+        display: block;
+        width: 100%;
     }
 
     .nav-links a:hover {
         color: var(--primary-color);
+        background: var(--card-bg);
     }
 
     .hero {
