@@ -294,15 +294,26 @@ footer {
         left: -100%;
         width: 100%;
         height: calc(100vh - 70px);
-        background: var(--white);
+        background: var(--nav-bg);
         flex-direction: column;
         align-items: center;
         padding: 2rem 0;
         transition: var(--transition);
+        z-index: 1000;
     }
 
     .nav-links.active {
         left: 0;
+    }
+
+    .nav-links a {
+        color: var(--text-color);
+        font-size: 1.1rem;
+        padding: 1rem 0;
+    }
+
+    .nav-links a:hover {
+        color: var(--primary-color);
     }
 
     .hero {
